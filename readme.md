@@ -1,27 +1,27 @@
 # Auth con Laravel 5.7
 
-_¬¬¬Integración de autenticación en Laravel 5.7_
+_Integración de autenticación en Laravel 5.7_
 
 ## Instalación 🔧
 
 _Instrucciones que te permitirán obtener una copia del proyecto._
-### Clonar repositorio
+**Clonar repositorio**
 ```
 $ git clone git:https://github.com/CamiloARZ/auth.git
 ```
-### Configurar permisos
+**Configurar permisos**
 ```
 $ sudo chmod -R 755 storage
 ```
-### Instalando dependencias con Composer
+**Instalando dependencias con Composer**
 ```
 $ composer install
 ```
-### crear una copia del archivo de configuración
+**crear una copia del archivo de configuración**
 ```
 $ cp .env.example .env
 ```
-### Crear un nuevo API key
+**Crear un nuevo API key**
 ```
 $ php artisan key:generate
 ```
