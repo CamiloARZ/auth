@@ -17,13 +17,20 @@ $ sudo chmod -R 755 storage
 ```
 $ composer install
 ```
-**crear una copia del archivo de configuración**
+**Crear una copia del archivo de configuración**
 ```
 $ cp .env.example .env
 ```
 **Crear un nuevo API key**
 ```
 $ php artisan key:generate
+```
+
+**Crea y configura tu bade de datos**
+
+**Aplica la migración**
+```
+$ php artisan migration
 ```
 
 ### Pre-requisitos 📋
