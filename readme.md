@@ -39,7 +39,6 @@ _Que cosas necesitas_
 
 * Editor de código que mas te guste.
 * Entorno de desarrollo como - [Laragon](https://laragon.org) o [XAMPP](https://www.apachefriends.org/es/index.html).
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
 * [Node.js](https://nodejs.org/en/)
 
 ## Ejecutando ⚙️
