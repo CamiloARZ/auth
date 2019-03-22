@@ -54,6 +54,7 @@ $ php artisan migrate
 $ php artisan make:auth
 ```
 **Instalar Laravel-lang**
+
 _Traducir los textos y mensajes al idioma español._
 ```
 $ composer require caouecs/laravel-lang:~3.0
