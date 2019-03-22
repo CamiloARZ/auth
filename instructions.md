@@ -55,7 +55,7 @@ $ php artisan make:auth
 ```
 **Instalar Laravel-lang**
 _Traducir los textos y mensajes al idioma español._
-```php
+```
 $ composer require caouecs/laravel-lang:~3.0
 ```
 _Una vez finalizada la descarga, nos dirigimos al editor para copiar las carpetas de los idiomas que queramos, 
