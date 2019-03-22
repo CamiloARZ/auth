@@ -16,7 +16,7 @@ MariaDB [(none)]> CREATE DATABASE auth;
 
 **Configurar el entorno en el archivo `.env`**
 
-```HTML
+```html
 APP_NAME="Laravel Auth"
  
 APP_URL=http://www.auth.local
