@@ -19,14 +19,35 @@ MariaDB [(none)]> CREATE DATABASE auth;
 ```env
 APP_NAME="Laravel Auth"
  
-APP_URL=http://www.auth.local
- 
 DB_DATABASE=auth
 DB_USERNAME=root
 DB_PASSWORD=
  
 MAIL_DRIVER=log
 ```
+
+```
+Uso el driver de correo en MAIL_DRIVERcomolog. Para que cada vez que envio un correo dentro del sistema este se va a guardar dentro del archivo de log.
+```
+## Generando los módulos de registro y autenticación
+
+##Index Lengths & MySQL / MariaDB""
+
+```php
+use Illuminate\Support\Facades\Schema;
+
+
+public function boot()
+{
+    Schema::defaultStringLength(191);
+}
+```
+
+**Ejecutar las migraciones de Laravel**
+```
+$ php artisan migrate
+```
+
 
 
 
