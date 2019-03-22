@@ -27,7 +27,8 @@ MAIL_DRIVER=log
 ```
 
 ```
-Uso el driver de correo en MAIL_DRIVERcomolog. Para que cada vez que envio un correo dentro del sistema este se va a guardar dentro del archivo de log.
+Uso el driver de correo en MAIL_DRIVERcomolog. Para que cada vez que envio un correo dentro del sistema 
+este se va a guardar dentro del archivo de log.
 ```
 ## Generando los módulos de registro y autenticación
 
@@ -47,6 +48,29 @@ public function boot()
 ```
 $ php artisan migrate
 ```
+
+**Instalar el sistema de autenticación de Laravel**
+```
+$ php artisan make:auth
+```
+**Instalar Laravel-lang**
+_Traducir los textos y mensajes al idioma español._
+```php
+$ composer require caouecs/laravel-lang:~3.0
+```
+_Una vez finalizada la descarga, nos dirigimos al editor para copiar las carpetas de los idiomas que queramos, 
+en el directorio `resources/lang`_
+
+_Cambiar la configuración del idioma en `config/app.php`_
+```php
+'locale' => 'es'
+```
+
+
+
+
+
+
 
 
 
