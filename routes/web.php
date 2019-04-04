@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// E-mail verification
+Route::get('/register/verify/{code}', 'GuestController@verify');
+ 

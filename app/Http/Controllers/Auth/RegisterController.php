@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
+use Mail;
+
 class RegisterController extends Controller
 {
     /*
@@ -63,10 +65,20 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $data['confirmation_code'] = str_random(25);
+
+        $user=  User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'confirmation_code' => $data['confirmation_code']
         ]);
+
+        // Send confirmation code
+        Mail::send('emails.confirmation_code', $data, function($message) use ($data) {
+            $message->to($data['email'], $data['name'])->subject('Por favor confirma tu correo');
+        });
+
+        return $user;
     }
 }
