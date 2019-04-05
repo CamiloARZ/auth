@@ -1,6 +1,6 @@
 # Auth con Laravel 5.7
 
-_Integración de autenticación en Laravel 5.7_
+_Integración de autenticación en Laravel 5.7 y verificación de cuenta_
 
 ## Instalación 🔧
 
