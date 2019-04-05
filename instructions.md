@@ -27,7 +27,7 @@ MAIL_DRIVER=log
 ```
 
 ```
-Uso el driver de correo en MAIL_DRIVERcomolog. Para que cada vez que envio un correo dentro del sistema 
+Uso el driver de correo en `MAIL_DRIVER` como `log`. Para que cada vez que envio un correo dentro del sistema 
 este se va a guardar dentro del archivo de log.
 ```
 ## Generando los módulos de registro y autenticación
@@ -67,10 +67,11 @@ _Cambiar la configuración del idioma en `config/app.php`_
 'locale' => 'es'
 ```
 
-##Generando módulo de verificación de usuario
+## Generando módulo de verificación de usuario
 
 **Agregar campos a la migración de usuarios**
-__Lo primero es añadir un campo a la tabla de usuarios. Este campo lo llamaremos `confirmed` y nos 
+
+_Lo primero es añadir un campo a la tabla de usuarios. Este campo lo llamaremos `confirmed` y nos 
 permitirá saber si un usuario ya ha verificado si email o aun no. Además usaremos un segundo campo 
 llamado `confirmation_code`._
 
@@ -87,7 +88,8 @@ public function up()
     }
 ```
 
-**Modificando el método `create`de `RegisterController`**
+**Modificando el método create de RegisterController**
+
 
 _Si usamos el sistema de autenticación que Laravel genera, debes modificar el método create de `RegisterController`,
 ubicado en `app\Http\Controllers\Auth`._
