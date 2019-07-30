@@ -35,6 +35,9 @@ este se va a guardar dentro del archivo de log.
 **Index Lengths & MySQL / MariaDB**
 
 ```php
+
+///app/Providers/AppServiceProvider.php
+
 use Illuminate\Support\Facades\Schema;
 
 
