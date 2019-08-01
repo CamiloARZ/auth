@@ -60,7 +60,8 @@ $ php artisan make:auth
 
 _Traducir los textos y mensajes al idioma español._
 ```
-$ composer require caouecs/laravel-lang:~3.0
+$ composer require caouecs/laravel-lang
+$ php artisan vendor:publish --tag=lang
 ```
 _Una vez finalizada la descarga, nos dirigimos al editor para copiar las carpetas de los idiomas que queramos, 
 en el directorio `resources/lang`_
